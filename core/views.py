@@ -9,7 +9,7 @@ class Home(TemplateView):
 class ContactCreateView(CreateView):
   model = Contact
   template_name = "contact/contact_form.html"
-  fields = ['title', 'name', 'email', 'message']
+  fields = ['name', 'email', 'message']
   success_url = reverse_lazy('success')
 
 class Success(TemplateView):
